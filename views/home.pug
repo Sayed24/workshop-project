@@ -1,0 +1,265 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js')
+    title Portfolio Project
+  body
+    h1
+      a.align-self-center.align-item-99-center Sacramento
+    nav.navbar.navbar-expand-sm.navbar-dark.sticky-top.navbar-light(style='background-color: rgba(107, 55, 17, 0.959);')
+      ul.navbar-nav
+        li.nav-item.active
+          a.nav-link(href='Home.html')
+            i.fa.fa-home.fa-lg
+            |  Home
+        li.nav-item
+          a.nav-link(href='Menu.html')
+            i.fa.fa-list.fa-lg
+            |  Menu
+        li.nav-item
+          a.nav-link(href='Services.html')
+            i.fa.fa-info.fa-lg
+            |  Services
+        li.nav-item
+          a.nav-link(href='AboutCoffee.html')
+            i.fa.fa-info.fa-lg
+            |  About Coffee
+        li.nav-item
+          a.nav-link(href='AboutCafe.html')
+            i.fa.fa-info.fa-lg
+            |  About The Cafe
+      .align-bottom
+        form.form-inline.my-2.my-lg-0
+          input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
+          button.btn.btn-outline-warning.my-2.my-sm-0(type='submit') Search
+    .container
+      .row.float-right
+        .col
+          // Button to Open the Modal
+          button.btn.btn-primary(type='button', data-toggle='modal', data-target='#myModal')
+            | Login
+          button.btn.btn-primary(type='button', data-toggle='modal', data-target='#myModal')
+            | Re
+          // The Modal
+          #myModal.modal
+            .modal-dialog
+              .modal-content
+                // Modal Header
+                .modal-header
+                  h4.modal-title Loging
+                  button.close(type='button', data-dismiss='modal') ×
+                // Modal body
+                .modal-body
+                    label Username: 
+                    input.form-control(type='text')
+                    br
+                    label Password: 
+                    input.form-control(type='password')
+                // Modal footer
+                .modal-footer
+                  button.btn.btn-danger(type='button', data-dismiss='modal') Close
+      .row.py-3
+        // left sidebar
+        .col-3.border-2.bcolor
+          .w-100.text-center.p-4
+            h5.p-2 Topics
+            img.img-thumbnail.img-fluid.mt-3(src='imgs/sidebar1.jpg')
+            img.img-thumbnail.img-fluid.mt-4(src='imgs/sidebar.jpg')
+            img.img-thumbnail.img-fluid.mt-5(src='imgs/sidebar2.jpg')
+            img.img-thumbnail.img-fluid.mt-5(src='imgs/sidebar3.jpg')
+        // /left sidebar
+        // main content
+        .col-6
+          // blog 1
+          #ar1.border-2.p-2.px-4
+            h3 Articles on Coffee
+            p Author: Somebody
+            img.img-thumbnail.img-fluid(src='imgs/blog2.jpg')
+            p.p-2
+              | Lorem ipsum dolor sit, amet
+              | consectetur adipisicing elit. Voluptatum
+              | quaerat, eveniet optio quo dolorem itaque
+              | ullam facere qui doloremque iure tenetur
+              | illo exercitationem alias laudantium hic
+              | porro consequuntur ab reprehenderit.
+            p
+              button.btn.btn-success(type='button') Read More
+            h6
+              strong  Share it:
+              a(target='blank', href='http://facebook.com')
+                i.fa.fa-facebook-f.mr-3
+              a(target='blank', href='http://twitter.com')
+                i.fa.fa-twitter.mr-3
+              a(target='blank', href='http://instagram.com')
+                i.fa.fa-instagram.mr-3
+              a(target='blank', href='http://youtube.com')
+                i.fa.fa-youtube.mr-3
+              a(target='blank', href='http://pintrest.com')
+                i.fa.fa-pinterest-p.mr-3
+              a(target='blank', href='http://googel.com')
+                i.fa.fa-google-plus.mr-3
+            p
+          // /blog
+          // blog 2
+          #ar2.border-2.p-2.px-4.mt-3
+            h3 Travel Somewhere
+            p Author: Somebody
+            img.img-thumbnail.img-fluid(src='imgs/blog3.jpg')
+            p.p-2
+              | Lorem ipsum dolor sit, amet
+              | consectetur adipisicing elit. Voluptatum
+              | quaerat, eveniet optio quo dolorem itaque
+              | ullam facere qui doloremque iure tenetur
+              | illo exercitationem alias laudantium hic
+              | porro consequuntur ab reprehenderit.
+            p
+              button.btn.btn-success(type='button') Read More
+            h6
+              strong  Share it:
+              a(target='blank', href='http://facebook.com')
+                i.fa.fa-facebook-f.mr-3
+              a(target='blank', href='http://twitter.com')
+                i.fa.fa-twitter.mr-3
+              a(target='blank', href='http://instagram.com')
+                i.fa.fa-instagram.mr-3
+              a(target='blank', href='http://youtube.com')
+                i.fa.fa-youtube.mr-3
+              a(target='blank', href='http://pintrest.com')
+                i.fa.fa-pinterest-p.mr-3
+              a(target='blank', href='http://googel.com')
+                i.fa.fa-google-plus.mr-3
+            p
+          // /blog
+          // blog 3
+          #ar3.border-2.p-2.px-4.mt-3
+            h3 Top 10 Bussiness
+            p Author: Somebody
+            img.img-thumbnail.img-fluid(src='imgs/blog2.jpg')
+            p.p-2
+              | Lorem ipsum dolor sit, amet
+              | consectetur adipisicing elit. Voluptatum
+              | quaerat, eveniet optio quo dolorem itaque
+              | ullam facere qui doloremque iure tenetur
+              | illo exercitationem alias laudantium hic
+              | porro consequuntur ab reprehenderit.
+            p
+              button.btn.btn-success(type='button') Read More
+            h6
+              strong  Share it:
+              a(target='blank', href='http://facebook.com')
+                i.fa.fa-facebook-f.mr-3
+              a(target='blank', href='http://twitter.com')
+                i.fa.fa-twitter.mr-3
+              a(target='blank', href='http://instagram.com')
+                i.fa.fa-instagram.mr-3
+              a(target='blank', href='http://youtube.com')
+                i.fa.fa-youtube.mr-3
+              a(target='blank', href='http://pintrest.com')
+                i.fa.fa-pinterest-p.mr-3
+              a(target='blank', href='http://googel.com')
+                i.fa.fa-google-plus.mr-3
+            p
+          // /blog
+          // blog 4
+          #ar4.border-2.p-2.px-4.mt-3
+            h3 Fun Place Coffee
+            p Author: Somebody
+            img.img-thumbnail.img-fluid(src='imgs/blog1.jpg')
+            p.p-2
+              | Lorem ipsum dolor sit, amet
+              | consectetur adipisicing elit. Voluptatum
+              | quaerat, eveniet optio quo dolorem itaque
+              | ullam facere qui doloremque iure tenetur
+              | illo exercitationem alias laudantium hic
+              | porro consequuntur ab reprehenderit.
+            p
+              button.btn.btn-success(type='button') Read More
+            h6
+              strong  Share it:
+              a(target='blank', href='http://facebook.com')
+                i.fa.fa-facebook-f.mr-3
+              a(target='blank', href='http://twitter.com')
+                i.fa.fa-twitter.mr-3
+              a(target='blank', href='http://instagram.com')
+                i.fa.fa-instagram.mr-3
+              a(target='blank', href='http://youtube.com')
+                i.fa.fa-youtube.mr-3
+              a(target='blank', href='http://pintrest.com')
+                i.fa.fa-pinterest-p.mr-3
+              a(target='blank', href='http://googel.com')
+                i.fa.fa-google-plus.mr-3
+            p
+          // /blog
+          // /main content
+          // right sidebar
+          .col-3.border-2.bcolor
+            .w-100.text-center.p-4
+              h5.p-2.border-bt.text-danger Social
+              .p-2
+                a(target='blank', href='http://facebook.com')
+                  i.fa.fa-facebook-square.mr-3
+                  | Facebook
+              .p-2
+                a(target='blank', href='http://instagram.com')
+                  i.fa.fa-instagram.mr-3
+                  | Instagram
+              .p-2
+                a(target='blank', href='http://youtube.com')
+                  i.fa.fa-youtube-square.mr-3
+                  | Youtube
+              .p-2
+                a(target='blank', href='http://google.com')
+                  i.fa.fa-google-plus.mr-3
+                  | Google+
+              .p-2
+                a(target='blank', href='http://twitter.com')
+                  i.fa.fa-twitter-square.mr-3
+                  | Twitter
+              // Recent
+              .mt-5
+                h5.border-2.p-2 Recent
+                .d-flex.flex-column.p-2.mt-3
+                  a(href='#ar1')
+                    .d-flex.flex-row
+                      img.mt-1.img-fluid.w-50.h-50(src='imgs/blog.jpg', alt='')
+                      p Articles on Coffee
+                  a(href='#ar2')
+                    .d-flex.flex-row
+                      img.mt-1.img-fluid.w-50.h-50(src='imgs/blog5.jpg', alt='')
+                      p Top 10 Bussiness
+                  a(href='#ar3')
+                    .d-flex.flex-row
+                      img.mt-1.img-fluid.w-50.h-50(src='imgs/blog2.jpg', alt='')
+                      p Travel Somewhere
+                  a(href='#ar4')
+                    .d-flex.flex-row
+                      img.mt-1.img-fluid.w-50.h-50(src='imgs/blog3.jpg', alt='')
+                      p Fun Place Coffee
+                  a(href='#ar1')
+                    .d-flex.flex-row
+                      img.mt-1.img-fluid.w-50.h-50(src='imgs/blog4.jpg', alt='')
+                      p Articles on Coffee
+                  a(href='#ar2')
+                    .d-flex.flex-row
+                      img.mt-1.img-fluid.w-50.h-50(src='imgs/blog6.jpg', alt='')
+                      p Top 10 Bussiness
+                  a(href='#ar3')
+                    .d-flex.flex-row
+                      img.mt-1.img-fluid.w-50.h-50(src='imgs/blog1.jpg', alt='')
+                      p Travel Somewhere
+                  a(href='#ar4')
+                    .d-flex.flex-row
+                      img.mt-1.img-fluid.w-50.h-50(src='imgs/blog7.jpg', alt='')
+                      p Fun Place Coffee
+              // /Recent
+              // /right sidebar

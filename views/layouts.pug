@@ -1,0 +1,84 @@
+doctype html
+html(lang='en')
+  head
+    title NodeJS WEBSITE
+    link(href='/css/bootstrap.min.css', rel='stylesheet')
+    style.
+      .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      }
+      @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+      }
+      }
+    // Custom styles for this template
+    link(href='jumbotron.css', rel='stylesheet')
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+      a.navbar-brand(href='#') Navbar
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarsExampleDefault.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='#')
+              | Home 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='#') Link
+          li.nav-item
+            a.nav-link.disabled(href='#', tabindex='-1', aria-disabled='true') Disabled
+          li.nav-item.dropdown
+            a#dropdown01.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Dropdown
+            .dropdown-menu(aria-labelledby='dropdown01')
+              a.dropdown-item(href='#') Action
+              a.dropdown-item(href='#') Another action
+              a.dropdown-item(href='#') Something else here
+        form.form-inline.my-2.my-lg-0
+          input.form-control.mr-sm-2(type='text', placeholder='Search', aria-label='Search')
+          button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+    main(role='main')
+      // Main jumbotron for a primary marketing message or call to action
+      .jumbotron
+        .container
+          h1.display-3 Hello, world!
+          p
+            | This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
+          p
+            a.btn.btn-primary.btn-lg(href='#', role='button') Learn more »
+      .container
+        // Example row of columns
+        .row
+          .col-md-4
+            h2 Heading
+            p
+              | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            p
+              a.btn.btn-secondary(href='#', role='button') View details »
+          .col-md-4
+            h2 Heading
+            p
+              | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            p
+              a.btn.btn-secondary(href='#', role='button') View details »
+          .col-md-4
+            h2 Heading
+            p
+              | Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+            p
+              a.btn.btn-secondary(href='#', role='button') View details »
+        hr
+        block content
+      // /container
+    footer.container
+      p © Company 2017-2020
+    script(src='https://code.jquery.com/jquery-3.4.1.slim.min.js', integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n', crossorigin='anonymous')
+    script.
+      window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\\/script>')
+    script(src='/js/bootstrap.bundle.min.js', integrity='sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm', crossorigin='anonymous')

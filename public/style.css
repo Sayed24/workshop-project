@@ -1,0 +1,47 @@
+ body {
+            background-color:
+        }
+        h1 {
+            padding: 40px 150px 40px;
+            color: rgba(241, 236, 236, 0.7);
+            background-image: url(imgs/hdbg.jpg);
+            font-size: 50px;
+            margin: 0;            
+        }
+        h1:hover {
+            color: rgb(255, 255, 255);
+            font-size: 51px;
+            transition-duration: 1s;
+            text-transform: uppercase;
+        }
+        .nav-link {
+            color:rgb(115, 207, 8);
+        }
+        .nav-link:hover{
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+            transition-duration: 0.5s;
+            text-transform: uppercase;
+            border-bottom: 3px dashed rgb(255, 255, 255, 0.1);
+            background-color: rgb(168, 168, 168, 0.2);
+            border-radius: 8px;
+        }
+        .navbar {
+            padding: 0;
+            border: 10px solid transparent;
+            padding-left: 100px;
+        }
+        .bcolor {
+            background-color: aliceblue;
+        }
+
+        .border-2 {
+            border: 1px dotted lightgray;
+            border-radius: 3px;
+            box-shadow: 0px 1px 2px black;
+        }
+
+        .navbar-nav {
+            margin-right: 350px;
+        }
+      

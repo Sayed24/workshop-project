@@ -1,0 +1,25 @@
+extends layouts
+block content
+    .container
+        form(method="post", action="contact/send")
+            h1 Contact us
+            .form-group
+            label(for="name") FirstName:
+            input.form-control(type="text", name="name", placeholder="Enter Your FirstName")
+            .form-group
+            label(for="name") LastName:
+            input.form-control(type="text", name="name", placeholder="Enter Your LastName")
+            .form-group
+            label(for="phone") Phone:
+            input.form-control(type="number", name="phone", placeholder="Enter Your Phone Number")            
+            .form-group
+            label(for="message") Email:
+            input.form-control(type="text", name="message", placeholder="Your Email Address")
+            .form-group
+            label(for="location") Location:
+            input.form-control(type="text", name="location", placeholder="Add Your Location")
+            .form-group
+            label(for="message") Message:
+            textarea.form-control(type="text", name="message", placeholder="Add Your Comment...")
+            br
+            button.btn.btn-outline-primary(type="submit") Send
