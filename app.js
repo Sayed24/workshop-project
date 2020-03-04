@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-const pass = 'NucampSac';
+const pass = 'add Your Password here';
 
 
 
